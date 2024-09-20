@@ -16,7 +16,12 @@ html,body{
     flex-direction: column;
 }
 
+.greeting{
+    color: #AA003A;
+    font-size: medium;
 
+
+}
 #logo{
     width: 25vw;
 }
