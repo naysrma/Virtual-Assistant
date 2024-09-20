@@ -16,7 +16,7 @@ Welcome to the **Virtual Assistant** project! This intelligent assistant is desi
 
 ### User Interface
 ![image](https://github.com/user-attachments/assets/c5398c3f-f1cb-4b71-9781-9cca5c7d1f1c)
-![image](https://github.com/user-attachments/assets/e2cb9e1c-c42b-4ba7-aabc-9aeaae0e022d)
+![image](https://github.com/user-attachments/assets/a230577d-e2ce-4970-91dd-4d1889654b0c)
 
 
 ## Getting Started
