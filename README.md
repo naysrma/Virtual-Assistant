@@ -52,10 +52,4 @@ After launching the application, simply type or speak your command. For example:
 
 We welcome contributions! If you’d like to improve the Virtual Assistant, please feel free to fork the repository, make your changes, and submit a pull request. Check the **issues** section for current improvements and bugs.
 
-## License
 
-This project is licensed under the MIT License.
-
----
-
-Feel free to modify any sections to better fit your style or project specifics! Let me know if you need more details or further customization.
