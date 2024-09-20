@@ -15,11 +15,11 @@ function wishMe() {
     let day = new Date();
     let hours = day.getHours();
     if (hours >= 0 && hours < 12) {
-        speak("Good morning mam");
+        speak("Good morning Human");
     } else if (hours >= 12 && hours < 16) {
-        speak("Good afternoon mam");
+        speak("Good afternoon human");
     } else {
-        speak("Good evening mam");
+        speak("Good evening human");
     }
 }
 
@@ -50,29 +50,31 @@ function takeCommand(message) {
     voice.style.display = "none";
 
     // Correcting if-else logic with separate `message.includes()` calls
-    if (message.includes("hello") || message.includes("hello sifra") || message.includes("hi") || message.includes("hi shipra")) {
-        speak("Hello mam, what can I help you with?");
-    } else if (message.includes("who are you") || message.includes("what are you")) {
+    if (message.toLowerCase().includes("hello") || message.toLowerCase().includes("hello sifra") || message.toLowerCase().includes("hi") || message.toLowerCase().includes("hi shipra")) {
+        speak("Hello human, what can I help you with?");
+    } else if (message.toLowerCase().includes("who are you") || message.toLowerCase().includes("what are you")) {
         speak("Hi, I am Shifra, your virtual assistant, created by Namya Sharma. How may I assist you?");
-    } else if (message.includes("open youtube")) {
+    } else if (message.toLowerCase().includes("what can you do for me") || message.toLowerCase().includes("what work you can do for me") || message.toLowerCase().includes("what do you do")) {
+        speak("I can assist you with your queries, opening applications like calculator, WhatsApp, and various websites like Google, YouTube, Facebook.");
+    } else if (message.toLowerCase().includes("open youtube")) {
         speak("Opening YouTube");
         window.open("https://www.youtube.com/");
-    } else if (message.includes("open google")) {
+    } else if (message.toLowerCase().includes("open google")) {
         speak("Opening Google");
         window.open("https://www.google.com/");
-    } else if (message.includes("open instagram")) {
+    } else if (message.toLowerCase().includes("open instagram")) {
         speak("Opening Instagram");
         window.open("https://www.instagram.com/");
-    } else if (message.includes("open facebook")) {
+    } else if (message.toLowerCase().includes("open facebook")) {
         speak("Opening Facebook");
         window.open("https://www.facebook.com/");
-    } else if (message.includes("open calculator")) {
+    } else if (message.toLowerCase().includes("open calculator")) {
         speak("Opening Calculator");
-        window.open("calculator://");  //(Check this line - Calculator URLs may not work like that)
-    } else if (message.includes("open whatsapp")) {
+        window.open("calculator://"); // You should handle this with actual OS integration or an alternative.
+    } else if (message.toLowerCase().includes("open whatsapp")) {
         speak("Opening WhatsApp");
         window.open("whatsapp://");
-    } else if (message.includes("what is time")) {
+    } else if (message.toLowerCase().includes("what is time")) {
         let time = new Date().toLocaleString(undefined, {
             hour: "numeric",
             minute: "numeric",
